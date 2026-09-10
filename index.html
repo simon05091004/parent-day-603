@@ -15,6 +15,8 @@ img{max-width:100%}
 [hidden]{display:none!important}
 </style>
 <title>603 班家長日</title>
+<meta name="theme-color" content="#1B4034">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231B4034'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='26' font-weight='700' text-anchor='middle' fill='%23D9AE55'%3E603%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
@@ -320,6 +322,49 @@ mark.todo{
   font-family:var(--mono);font-size:12px;color:var(--ink-faint);letter-spacing:.1em;
   padding-right:6px;font-variant-numeric:tabular-nums;
 }
+/* ---------- 列印 / 另存 PDF ---------- */
+@media print{
+  @page{size:A4 landscape;margin:12mm}
+  :root{
+    --bg:#fff;--surface:#fff;--surface-2:#fff;
+    --ink:#111;--ink-soft:#333;--ink-faint:#666;
+    --line:#bbb;--line-soft:#ddd;
+    --green:#24503F;--green-tint:#eef3ef;
+    --amber:#8A5C0D;--amber-tint:#f6efe0;
+    --brick:#8C3D20;--brick-tint:#f4e6df;
+    --slate:#3F4D68;--slate-tint:#e8ecf3;
+    --fs-title:21px;--fs-lead:14.5px;--fs-body:12px;--fs-small:11.5px;
+    --fs-label:9.5px;--fs-num:18px;--fs-month:14px;--fs-cover:36px;
+  }
+  html,body{overflow:visible!important;background:#fff!important;color:#111!important}
+  .stage{height:auto!important;display:block!important;padding:0!important;overflow:visible!important}
+  .deck{
+    width:auto!important;height:auto!important;max-width:none!important;
+    transform:none!important;display:block!important;position:static!important;
+  }
+  .slide{
+    display:flex!important;position:static!important;inset:auto!important;height:auto!important;
+    border:0!important;border-radius:0!important;padding:0 0 8mm!important;gap:14px!important;
+    animation:none!important;break-after:page;page-break-after:always;break-inside:avoid;
+  }
+  .slide:last-child{break-after:auto;page-break-after:auto}
+  .s-body{justify-content:flex-start!important;align-content:start!important}
+  .slide--cover{background:#fff!important;color:#111!important;padding:0 0 8mm!important}
+  .slide--cover h1{color:#1B4034!important}
+  .slide--cover .kicker,.slide--cover .tagline{color:#8A5C0D!important}
+  .slide--cover .term{color:#333!important}
+  .slide--cover dt{color:#555!important}
+  .slide--cover dd{color:#111!important}
+  .cover-rule{background:#8A5C0D!important}
+  .nav,.rail{display:none!important}
+  .s-foot{display:flex!important}
+  .s-foot .pg{display:inline!important}
+  .cols--2,.cols--wide{grid-template-columns:1fr 1fr!important;gap:20px!important}
+  .cols--3{grid-template-columns:repeat(3,1fr)!important}
+  .pillars{grid-template-columns:repeat(3,1fr)!important;gap:18px!important}
+  .months{grid-template-columns:repeat(5,1fr)!important;gap:12px!important}
+  mark.todo{background:transparent!important;color:#8C3D20!important;border-bottom:1px dashed #8C3D20}
+}
 </style>
 </head>
 <body>
@@ -331,13 +376,13 @@ mark.todo{
 <div class="deck" id="deck">
 
   <!-- 1 ─ cover -->
-  <section class="slide slide--cover">
+  <section id="p1" class="slide slide--cover">
     <span class="kicker">新北市三重區永福國民小學</span>
     <h1>603 班<br>家長日</h1>
     <p class="term">115 學年度 第一學期</p>
     <div class="cover-rule"></div>
     <dl>
-      <dt>時間</dt><dd><mark class="todo">〔家長日日期與時間〕</mark></dd>
+      <dt>時間</dt><dd>2026 年 9 月 11 日（五）<mark class="todo">〔時間〕</mark></dd>
       <dt>地點</dt><dd>603 教室</dd>
       <dt>導師</dt><dd><mark class="todo">〔導師姓名〕</mark> 老師</dd>
     </dl>
@@ -345,7 +390,7 @@ mark.todo{
   </section>
 
   <!-- 2 ─ agenda -->
-  <section class="slide">
+  <section id="p2" class="slide">
     <header>
       <span class="eyebrow">今天的流程</span>
       <h2 class="s-title">四十分鐘，把這一年講清楚</h2>
@@ -366,7 +411,7 @@ mark.todo{
   </section>
 
   <!-- 3 ─ 理念 -->
-  <section class="slide">
+  <section id="p3" class="slide">
     <header>
       <span class="eyebrow">01 班級經營</span>
       <h2 class="s-title">六年級要練的，是「一個人也能把事情做好」</h2>
@@ -396,7 +441,7 @@ mark.todo{
   </section>
 
   <!-- 4 ─ 班規 -->
-  <section class="slide">
+  <section id="p4" class="slide">
     <header>
       <span class="eyebrow">01 班級經營</span>
       <h2 class="s-title">班規與生活常規</h2>
@@ -428,7 +473,7 @@ mark.todo{
   </section>
 
   <!-- 5 ─ 課程 -->
-  <section class="slide">
+  <section id="p5" class="slide">
     <header>
       <span class="eyebrow">02 課程與評量</span>
       <h2 class="s-title">六年級上學期，各科在做什麼</h2>
@@ -449,7 +494,7 @@ mark.todo{
   </section>
 
   <!-- 6 ─ 作業 -->
-  <section class="slide">
+  <section id="p6" class="slide">
     <header>
       <span class="eyebrow">02 課程與評量</span>
       <h2 class="s-title">作業：<span class="thin">「寫完」不是目標，「弄懂」才是</span></h2>
@@ -480,7 +525,7 @@ mark.todo{
   </section>
 
   <!-- 7 ─ 評量 -->
-  <section class="slide">
+  <section id="p7" class="slide">
     <header>
       <span class="eyebrow">02 課程與評量</span>
       <h2 class="s-title">成績怎麼算</h2>
@@ -513,7 +558,7 @@ mark.todo{
   </section>
 
   <!-- 8 ─ 行事曆 -->
-  <section class="slide">
+  <section id="p8" class="slide">
     <header>
       <span class="eyebrow">03 本學期行事</span>
       <h2 class="s-title">這學期，我們會一起經過這些日子</h2>
@@ -529,7 +574,7 @@ mark.todo{
       <div class="months">
         <div class="month">
           <h3>九月<span class="en">SEP</span></h3>
-          <div class="ev"><i class="dot d-event"></i><span class="dt">今天</span><span class="nm"><b>家長日</b></span></div>
+          <div class="ev"><i class="dot d-event"></i><span class="dt">11 五</span><span class="nm"><b>家長日</b></span></div>
         </div>
         <div class="month">
           <h3>十月<span class="en">OCT</span></h3>
@@ -562,7 +607,7 @@ mark.todo{
   </section>
 
   <!-- 9 ─ 游泳 -->
-  <section class="slide">
+  <section id="p9" class="slide">
     <header>
       <span class="eyebrow">03 本學期行事</span>
       <h2 class="s-title">游泳教學　<span class="thin">共三次</span></h2>
@@ -598,7 +643,7 @@ mark.todo{
   </section>
 
   <!-- 10 ─ 拍照 -->
-  <section class="slide">
+  <section id="p10" class="slide">
     <header>
       <span class="eyebrow">03 本學期行事</span>
       <h2 class="s-title">畢業攝影三部曲</h2>
@@ -618,7 +663,7 @@ mark.todo{
   </section>
 
   <!-- 11 ─ 疫苗 -->
-  <section class="slide">
+  <section id="p11" class="slide">
     <header>
       <span class="eyebrow">03 本學期行事</span>
       <h2 class="s-title">10/23 (五)　流感疫苗校園接種</h2>
@@ -650,7 +695,7 @@ mark.todo{
   </section>
 
   <!-- 12 ─ 運動會 -->
-  <section class="slide">
+  <section id="p12" class="slide">
     <header>
       <span class="eyebrow">03 本學期行事</span>
       <h2 class="s-title">12/12 (六)　校慶運動會</h2>
@@ -671,7 +716,7 @@ mark.todo{
   </section>
 
   <!-- 13 ─ 畢旅 -->
-  <section class="slide">
+  <section id="p13" class="slide">
     <header>
       <span class="eyebrow">03 本學期行事</span>
       <h2 class="s-title">12/22 (二) – 12/24 (四)　畢業旅行</h2>
@@ -699,7 +744,7 @@ mark.todo{
   </section>
 
   <!-- 14 ─ 學期收尾 + 升國中 -->
-  <section class="slide">
+  <section id="p14" class="slide">
     <header>
       <span class="eyebrow">04 六年級專屬</span>
       <h2 class="s-title">從休業式到畢業，剩下的路</h2>
@@ -720,7 +765,7 @@ mark.todo{
   </section>
 
   <!-- 15 ─ Q&A -->
-  <section class="slide">
+  <section id="p15" class="slide">
     <header>
       <span class="eyebrow">結語</span>
       <h2 class="s-title">謝謝您今天來</h2>
@@ -803,6 +848,22 @@ mark.todo{
 
   window.addEventListener('resize', fit);
   if (deckQ.addEventListener) deckQ.addEventListener('change', fit);
+
+  // 平板／觸控：左右滑動翻頁
+  var tx = 0, ty = 0, tt = 0;
+  document.addEventListener('touchstart', function(e){
+    if (!deckQ.matches || e.touches.length !== 1) { tt = 0; return; }
+    tx = e.touches[0].clientX; ty = e.touches[0].clientY; tt = Date.now();
+  }, {passive:true});
+  document.addEventListener('touchend', function(e){
+    if (!deckQ.matches || !tt) return;
+    var t = e.changedTouches[0];
+    var dx = t.clientX - tx, dy = t.clientY - ty, dt = Date.now() - tt;
+    tt = 0;
+    if (dt < 800 && Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      show(dx < 0 ? i + 1 : i - 1, true);
+    }
+  }, {passive:true});
 
   var m = /^#p(\d+)$/.exec(location.hash || '');
   if (m) i = parseInt(m[1], 10) - 1;
