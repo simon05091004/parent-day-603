@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="永福國小 603 班 115 學年度第一學期家長日簡報：班級經營、課程與評量、本學期重要行事曆。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="603 班家長日｜永福國小">
+<meta property="og:description" content="永福國小 603 班 115 學年度第一學期家長日簡報：班級經營、課程與評量、本學期重要行事曆。">
+<meta property="og:locale" content="zh_TW">
+<style>
+:root{color-scheme:light dark}
+html,body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<title>603 班家長日</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
+<style>
+:root{
+  --bg:#EDF0EA;
+  --surface:#FFFFFF;
+  --surface-2:#F4F6F1;
+  --ink:#152219;
+  --ink-soft:#4C5C52;
+  --ink-faint:#7A8A80;
+  --line:#D2D9CE;
+  --line-soft:#E5EAE1;
+  --green:#24503F;
+  --green-tint:#E3EDE6;
+  --amber:#9C6A10;
+  --amber-tint:#F7EACC;
+  --brick:#9E4626;
+  --brick-tint:#F6E3DA;
+  --slate:#455573;
+  --slate-tint:#E3E8F0;
+
+  --fs-title:26px;
+  --fs-lead:19px;
+  --fs-body:15px;
+  --fs-small:13.5px;
+  --fs-label:11.5px;
+  --fs-num:24px;
+  --fs-month:17px;
+  --fs-cover:38px;
+
+  --serif:"Noto Serif TC","Songti TC",Georgia,serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1512;
+    --surface:#16201B;
+    --surface-2:#1C2721;
+    --ink:#E6EDE6;
+    --ink-soft:#A5B4AA;
+    --ink-faint:#7A8A80;
+    --line:#2B3931;
+    --line-soft:#222E27;
+    --green:#7FC5A2;
+    --green-tint:#1B2C24;
+    --amber:#E3B45C;
+    --amber-tint:#2E2617;
+    --brick:#E08D6A;
+    --brick-tint:#2E1D16;
+    --slate:#93A8CC;
+    --slate-tint:#1B2331;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1512;
+  --surface:#16201B;
+  --surface-2:#1C2721;
+  --ink:#E6EDE6;
+  --ink-soft:#A5B4AA;
+  --ink-faint:#7A8A80;
+  --line:#2B3931;
+  --line-soft:#222E27;
+  --green:#7FC5A2;
+  --green-tint:#1B2C24;
+  --amber:#E3B45C;
+  --amber-tint:#2E2617;
+  --brick:#E08D6A;
+  --brick-tint:#2E1D16;
+  --slate:#93A8CC;
+  --slate-tint:#1B2331;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:var(--fs-body);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,p,ul,ol,dl,dd{margin:0}
+ul{padding:0;list-style:none}
+b,strong{font-weight:700}
+
+/* ---------- stage / deck : document mode (phones) is the base ---------- */
+.stage{padding-block:22px;padding-left:16px;padding-right:16px}
+.deck{
+  display:flex;flex-direction:column;gap:16px;
+  max-width:680px;margin:0 auto;
+}
+.slide{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:5px;
+  padding:22px 18px 18px;
+  display:flex;flex-direction:column;gap:16px;
+}
+.nav,.rail{display:none}
+
+/* ---------- slide furniture ---------- */
+.eyebrow{
+  font-family:var(--mono);font-size:var(--fs-label);font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--green);
+  display:flex;align-items:center;gap:9px;
+}
+.eyebrow::before{content:"";width:16px;height:2px;background:var(--green);flex:none}
+.s-title{
+  font-family:var(--serif);font-weight:900;font-size:var(--fs-title);
+  line-height:1.25;letter-spacing:.01em;text-wrap:balance;margin-top:6px;
+}
+.s-title .thin{font-weight:700;color:var(--ink-soft)}
+.lead{font-size:var(--fs-lead);line-height:1.6;color:var(--ink);font-weight:500;text-wrap:balance}
+.muted{color:var(--ink-soft)}
+.faint{color:var(--ink-faint);font-size:var(--fs-small)}
+.s-body{flex:1;display:flex;flex-direction:column;gap:14px;min-height:0}
+.s-foot{
+  display:flex;justify-content:space-between;align-items:baseline;
+  border-top:1px solid var(--line-soft);padding-top:8px;
+  font-family:var(--mono);font-size:var(--fs-label);color:var(--ink-faint);
+  letter-spacing:.08em;
+}
+
+/* ---------- generic grids ---------- */
+.cols{display:grid;gap:14px;grid-template-columns:1fr}
+.gap-lg{gap:18px}
+
+/* ---------- pieces ---------- */
+.rule-list{display:flex;flex-direction:column;gap:0}
+.rule-list li{
+  display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:baseline;
+  padding:9px 0;border-bottom:1px solid var(--line-soft);
+}
+.rule-list li:last-child{border-bottom:0}
+.rule-list .k{
+  font-weight:700;color:var(--green);white-space:nowrap;font-size:var(--fs-small);
+  letter-spacing:.02em;
+}
+.rule-list .v{font-size:var(--fs-small);line-height:1.65;color:var(--ink-soft)}
+.rule-list .v b{color:var(--ink)}
+
+.pillars{display:grid;gap:12px;grid-template-columns:1fr}
+.pillar{border-left:3px solid var(--green);padding:2px 0 2px 14px}
+.pillar h3{font-family:var(--serif);font-weight:700;font-size:var(--fs-lead);line-height:1.3}
+.pillar p{font-size:var(--fs-small);color:var(--ink-soft);margin-top:4px}
+
+.steps{counter-reset:step;display:flex;flex-direction:column;gap:10px}
+.steps li{
+  counter-increment:step;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:baseline;
+}
+.steps li::before{
+  content:"0" counter(step);
+  font-family:var(--mono);font-weight:600;font-size:var(--fs-small);
+  color:var(--amber);letter-spacing:.06em;
+}
+.steps .t{font-weight:700;font-size:var(--fs-lead);font-family:var(--serif)}
+.steps .d{display:block;font-family:var(--sans);font-weight:400;font-size:var(--fs-small);color:var(--ink-soft);margin-top:2px}
+
+.panel{background:var(--surface-2);border:1px solid var(--line-soft);border-radius:4px;padding:14px 16px}
+.panel h3{font-size:var(--fs-small);font-weight:700;letter-spacing:.04em;color:var(--green);margin-bottom:7px}
+.panel ul li{font-size:var(--fs-small);color:var(--ink-soft);line-height:1.65;padding-left:14px;position:relative}
+.panel ul li::before{content:"";position:absolute;left:2px;top:.72em;width:4px;height:4px;border-radius:50%;background:var(--ink-faint)}
+.panel ul li + li{margin-top:5px}
+.panel ul li b{color:var(--ink)}
+
+.callout{
+  border-left:3px solid var(--amber);background:var(--amber-tint);
+  padding:11px 14px;border-radius:0 4px 4px 0;
+}
+.callout p{font-size:var(--fs-small);line-height:1.6;color:var(--ink)}
+.callout .tag{
+  font-family:var(--mono);font-size:var(--fs-label);font-weight:600;letter-spacing:.12em;
+  color:var(--amber);display:block;margin-bottom:3px;text-transform:uppercase;
+}
+
+.bignum{display:flex;flex-wrap:wrap;gap:10px}
+.date-chip{
+  border:1px solid var(--line);border-radius:4px;background:var(--surface-2);
+  padding:9px 14px;display:flex;align-items:baseline;gap:8px;
+}
+.date-chip .d{font-family:var(--mono);font-weight:600;font-size:var(--fs-num);color:var(--green);line-height:1}
+.date-chip .w{font-size:var(--fs-small);color:var(--ink-soft)}
+
+mark.todo{
+  background:var(--brick-tint);color:var(--brick);
+  font-weight:700;padding:0 4px;border-radius:2px;font-size:.94em;
+  box-decoration-break:clone;-webkit-box-decoration-break:clone;
+}
+
+/* ---------- calendar spine ---------- */
+.legend{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.legend span{
+  font-family:var(--mono);font-size:var(--fs-label);letter-spacing:.08em;
+  color:var(--ink-soft);display:flex;align-items:center;gap:6px;
+}
+.dot{width:8px;height:8px;border-radius:2px;flex:none;display:inline-block}
+.d-swim{background:var(--slate)}
+.d-photo{background:var(--ink-faint)}
+.d-health{background:var(--amber)}
+.d-exam{background:var(--brick)}
+.d-event{background:var(--green)}
+
+.months{display:grid;gap:14px;grid-template-columns:1fr}
+.month{border-top:2px solid var(--ink);padding-top:8px;display:flex;flex-direction:column;gap:7px}
+.month > h3{
+  font-family:var(--serif);font-weight:900;font-size:var(--fs-month);line-height:1;
+  display:flex;align-items:baseline;gap:7px;
+}
+.month > h3 .en{font-family:var(--mono);font-weight:500;font-size:var(--fs-label);color:var(--ink-faint);letter-spacing:.1em}
+.ev{display:grid;grid-template-columns:auto 1fr;column-gap:8px;row-gap:1px;align-items:baseline}
+.ev .dot{grid-column:1;grid-row:1;align-self:center}
+.ev .dt{grid-column:2;grid-row:1;justify-self:start;font-family:var(--mono);font-weight:600;font-size:var(--fs-small);color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+.ev .nm{grid-column:2;grid-row:2;font-size:var(--fs-small);color:var(--ink-soft);line-height:1.5}
+.ev .nm b{color:var(--ink);font-weight:500}
+
+/* ---------- cover ---------- */
+.slide--cover{
+  background:#1B4034;border-color:#1B4034;color:#EEF2EA;
+  justify-content:center;gap:0;
+}
+.slide--cover .kicker{
+  font-family:var(--mono);font-size:var(--fs-label);font-weight:600;letter-spacing:.2em;
+  color:#D9AE55;text-transform:uppercase;
+}
+.slide--cover h1{
+  font-family:var(--serif);font-weight:900;font-size:var(--fs-cover);line-height:1.12;
+  color:#F4F7F0;margin-top:14px;letter-spacing:.02em;
+}
+.slide--cover .term{font-size:var(--fs-lead);color:#B8CBBE;margin-top:12px;font-weight:500}
+.cover-rule{height:2px;background:#D9AE55;width:64px;margin:20px 0}
+.slide--cover dl{display:grid;grid-template-columns:auto 1fr;gap:5px 16px;font-size:var(--fs-small)}
+.slide--cover dt{font-family:var(--mono);letter-spacing:.1em;color:#8FAA9A;font-size:var(--fs-label)}
+.slide--cover dd{color:#E4EBDF}
+.slide--cover .tagline{
+  margin-top:20px;font-family:var(--serif);font-weight:700;font-size:var(--fs-lead);color:#D9AE55;
+}
+.slide--cover mark.todo{background:rgba(217,174,85,.18);color:#EBC77A}
+
+/* ---------- closing ---------- */
+.qa{
+  font-family:var(--serif);font-weight:900;font-size:calc(var(--fs-cover) * .8);
+  color:var(--green);line-height:1;letter-spacing:.06em;
+}
+
+/* ---------- deck (projection) mode ---------- */
+@media (min-width:820px) and (min-height:520px){
+  :root{
+    --fs-title:44px;
+    --fs-lead:25px;
+    --fs-body:19px;
+    --fs-small:17px;
+    --fs-label:12.5px;
+    --fs-num:32px;
+    --fs-month:24px;
+    --fs-cover:78px;
+  }
+  html,body{overflow:hidden}
+  .s-body{justify-content:center;align-content:center}
+  .s-foot .pg{display:none}
+  .stage{
+    height:100dvh;display:grid;place-items:center;overflow:hidden;padding:0;
+  }
+  .deck{
+    width:1280px;height:720px;max-width:none;position:relative;
+    transform-origin:center center;display:block;gap:0;
+  }
+  .slide{
+    position:absolute;inset:0;display:none;border:0;border-radius:0;
+    padding:52px 68px 34px;gap:20px;
+  }
+  .slide.is-active{display:flex;animation:rise .32s ease-out}
+  .slide--cover{padding:68px 78px}
+  .cols--2{grid-template-columns:1fr 1fr;gap:34px}
+  .cols--3{grid-template-columns:repeat(3,1fr);gap:26px}
+  .cols--wide{grid-template-columns:1.15fr .85fr;gap:34px}
+  .pillars{grid-template-columns:repeat(3,1fr);gap:26px}
+  .months{grid-template-columns:repeat(5,1fr);gap:22px}
+  .nav{
+    display:flex;position:fixed;right:22px;bottom:18px;gap:8px;z-index:10;
+    align-items:center;
+  }
+  .rail{
+    display:block;position:fixed;top:0;left:0;height:3px;background:var(--green);
+    z-index:10;transition:width .3s ease;
+  }
+}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  .slide.is-active{animation:none}
+  .rail{transition:none}
+}
+
+.nav button{
+  font-family:var(--mono);font-size:13px;font-weight:600;
+  border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);
+  border-radius:3px;padding:5px 11px;cursor:pointer;line-height:1.4;
+}
+.nav button:hover{border-color:var(--green);color:var(--green)}
+.nav button:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.nav .count{
+  font-family:var(--mono);font-size:12px;color:var(--ink-faint);letter-spacing:.1em;
+  padding-right:6px;font-variant-numeric:tabular-nums;
+}
+</style>
+</head>
+<body>
+
+
+<div class="rail" id="rail"></div>
+
+<div class="stage" id="stage">
+<div class="deck" id="deck">
+
+  <!-- 1 ─ cover -->
+  <section class="slide slide--cover">
+    <span class="kicker">新北市三重區永福國民小學</span>
+    <h1>603 班<br>家長日</h1>
+    <p class="term">115 學年度 第一學期</p>
+    <div class="cover-rule"></div>
+    <dl>
+      <dt>時間</dt><dd><mark class="todo">〔家長日日期與時間〕</mark></dd>
+      <dt>地點</dt><dd>603 教室</dd>
+      <dt>導師</dt><dd><mark class="todo">〔導師姓名〕</mark> 老師</dd>
+    </dl>
+    <p class="tagline">陪孩子走完國小最後一哩路</p>
+  </section>
+
+  <!-- 2 ─ agenda -->
+  <section class="slide">
+    <header>
+      <span class="eyebrow">今天的流程</span>
+      <h2 class="s-title">四十分鐘，把這一年講清楚</h2>
+    </header>
+    <div class="s-body">
+      <ol class="steps">
+        <li><span><span class="t">班級經營理念與班規</span><span class="d">我怎麼帶這個班，孩子每天要遵守什麼。</span></span></li>
+        <li><span><span class="t">課程、作業與評量</span><span class="d">六年級上學期各科重點、回家作業原則、成績怎麼算。</span></span></li>
+        <li><span><span class="t">本學期重要行事</span><span class="d">游泳課、拍照、疫苗、評量、運動會、畢業旅行。</span></span></li>
+        <li><span><span class="t">六年級專屬事項與提問</span><span class="d">畢業、升國中，以及您想問的任何事。</span></span></li>
+      </ol>
+      <div class="callout">
+        <span class="tag">提醒</span>
+        <p>最後保留約 10 分鐘給提問。如果您需要單獨談孩子的狀況，散會後我留下來，或另約時間，會談得更完整。</p>
+      </div>
+    </div>
+    <footer class="s-foot"><span>永福國小 603</span><span class="pg"></span></footer>
+  </section>
+
+  <!-- 3 ─ 理念 -->
+  <section class="slide">
+    <header>
+      <span class="eyebrow">01 班級經營</span>
+      <h2 class="s-title">六年級要練的，是「一個人也能把事情做好」</h2>
+    </header>
+    <div class="s-body">
+      <p class="lead muted">國小最後一年，孩子明年就要面對國中的節奏 —— 沒有人一直提醒、進度自己追、作業自己管。這一年我把重心放在三件事上。</p>
+      <div class="pillars">
+        <div class="pillar">
+          <h3>自律</h3>
+          <p>該做的事，不用人盯著做。從聯絡簿自己抄、東西自己收開始。</p>
+        </div>
+        <div class="pillar">
+          <h3>尊重</h3>
+          <p>對人、對物、對場合。先想再說，說出口的話要能負責。</p>
+        </div>
+        <div class="pillar">
+          <h3>負責</h3>
+          <p>做錯了先承擔，再修正。訂正、道歉、補做，都是負責的一部分。</p>
+        </div>
+      </div>
+      <div class="callout">
+        <span class="tag">我的角色</span>
+        <p>把標準說清楚、把過程陪完、把結果說明白。孩子在學校發生的事，該讓家長知道的，我不會等到期末才說。</p>
+      </div>
+    </div>
+    <footer class="s-foot"><span>永福國小 603</span><span class="pg"></span></footer>
+  </section>
+
+  <!-- 4 ─ 班規 -->
+  <section class="slide">
+    <header>
+      <span class="eyebrow">01 班級經營</span>
+      <h2 class="s-title">班規與生活常規</h2>
+    </header>
+    <div class="s-body cols cols--wide">
+      <ul class="rule-list">
+        <li><span class="k">到校作息</span><span class="v"><b>7:50 前到校</b>，8:00 開始晨讀。遲到請家長在聯絡簿註明原因。</span></li>
+        <li><span class="k">手機與 3C</span><span class="v">到校後統一保管，放學前領回。有急事請打學校電話轉 603。</span></li>
+        <li><span class="k">服裝儀容</span><span class="v">依學校規定；運動會、校外教學另行公告。頭髮整齊、指甲修剪。</span></li>
+        <li><span class="k">教室秩序</span><span class="v">發言先舉手；下課不追逐、不進出他班教室。</span></li>
+        <li><span class="k">請假</span><span class="v">當天 8:00 前致電學校或在班級群組告知，事後補請假單。</span></li>
+      </ul>
+      <div>
+        <div class="panel">
+          <h3>獎懲原則</h3>
+          <ul>
+            <li><b>以鼓勵為主</b>：集點、公開肯定、擔任小老師。</li>
+            <li><b>違規三步驟</b>：先提醒 → 再個別約談 → 必要時聯絡家長。</li>
+            <li>不用連坐處罰，不用寫罰寫當懲罰。</li>
+          </ul>
+        </div>
+        <div class="callout" style="margin-top:14px">
+          <span class="tag">開學第一週</span>
+          <p>班規會和孩子一起討論定案，張貼在教室後方。孩子參與訂的規則，才願意遵守。</p>
+        </div>
+      </div>
+    </div>
+    <footer class="s-foot"><span>永福國小 603</span><span class="pg"></span></footer>
+  </section>
+
+  <!-- 5 ─ 課程 -->
+  <section class="slide">
+    <header>
+      <span class="eyebrow">02 課程與評量</span>
+      <h2 class="s-title">六年級上學期，各科在做什麼</h2>
+    </header>
+    <div class="s-body">
+      <ul class="rule-list">
+        <li><span class="k">國語</span><span class="v">長文閱讀與段落結構，開始練習國中要用的<b>筆記與摘要</b>。</span></li>
+        <li><span class="k">數學</span><span class="v">分數小數四則、<b>比與比例</b>、圓面積與圓周、統計圖表 —— 這些是國中數學的地基，這學期落掉會很辛苦。</span></li>
+        <li><span class="k">英語</span><span class="v">句型延伸與短文閱讀，要求用完整句回答。</span></li>
+        <li><span class="k">社會</span><span class="v">臺灣歷史與公民生活，搭配時事討論。</span></li>
+        <li><span class="k">自然</span><span class="v">能量、生物與地球環境，重視實驗紀錄的完整。</span></li>
+        <li><span class="k">健體</span><span class="v">本學期含 <b>3 次游泳教學</b>（10/8、10/12、10/20），另有體適能檢測。</span></li>
+        <li><span class="k">藝文・綜合</span><span class="v">畢業相關製作與生涯探索課程。</span></li>
+      </ul>
+      <p class="faint">各科進度依課程計畫實施，若因活動調整會在聯絡簿說明。<mark class="todo">〔可依實際教學進度增修〕</mark></p>
+    </div>
+    <footer class="s-foot"><span>永福國小 603</span><span class="pg"></span></footer>
+  </section>
+
+  <!-- 6 ─ 作業 -->
+  <section class="slide">
+    <header>
+      <span class="eyebrow">02 課程與評量</span>
+      <h2 class="s-title">作業：<span class="thin">「寫完」不是目標，「弄懂」才是</span></h2>
+    </header>
+    <div class="s-body cols cols--2">
+      <ul class="rule-list">
+        <li><span class="k">每日作業</span><span class="v">聯絡簿登記，<b>請家長簽名確認</b>孩子有寫完。</span></li>
+        <li><span class="k">完成時間</span><span class="v">以 <b>60–80 分鐘</b>為原則。若明顯超過，請在聯絡簿寫一句，我會調整份量。</span></li>
+        <li><span class="k">訂正</span><span class="v">錯的題目一定要訂正。<b>訂正比寫完更重要。</b></span></li>
+        <li><span class="k">補交</span><span class="v">請假或未完成，隔天補齊；連續未交我會主動聯絡。</span></li>
+      </ul>
+      <div>
+        <div class="panel">
+          <h3>家長可以幫的三件事</h3>
+          <ul>
+            <li>確認有寫、簽名 —— <b>不必幫忙檢查對錯</b>。錯的題目是我明天上課的材料。</li>
+            <li>固定的寫作業時間與桌面，比催促有效。</li>
+            <li>孩子說「不會」的時候，先讓他把不會的地方講出來，再決定要不要教。</li>
+          </ul>
+        </div>
+        <div class="callout" style="margin-top:14px">
+          <span class="tag">請放心</span>
+          <p>孩子帶著沒完成的作業來，我不會當場責備，但一定會要求補完。我們要的是習慣，不是嚇阻。</p>
+        </div>
+      </div>
+    </div>
+    <footer class="s-foot"><span>永福國小 603</span><span class="pg"></span></footer>
+  </section>
+
+  <!-- 7 ─ 評量 -->
+  <section class="slide">
+    <header>
+      <span class="eyebrow">02 課程與評量</span>
+      <h2 class="s-title">成績怎麼算</h2>
+    </header>
+    <div class="s-body cols cols--2">
+      <div class="panel">
+        <h3>平時評量　<mark class="todo">〔佔比待確認〕</mark></h3>
+        <ul>
+          <li>課堂表現與參與</li>
+          <li>回家作業與訂正</li>
+          <li>隨堂測驗、單元小考</li>
+          <li>分組合作與實作、報告</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>定期評量　<mark class="todo">〔佔比待確認〕</mark></h3>
+        <ul>
+          <li><b>期中評量</b>　11/5(四)–11/6(五)</li>
+          <li><b>期末評量</b>　1/12(二)–1/13(三)</li>
+          <li>考科與範圍於<b>考前兩週</b>公告於聯絡簿</li>
+          <li>請假需檢附證明，返校後安排補考</li>
+        </ul>
+      </div>
+      <div class="callout" style="grid-column:1/-1">
+        <span class="tag">給家長</span>
+        <p>分數請看趨勢，不看單次。六年級的成績會列入畢業成績，但更值得問孩子的是：<b>這次錯的，你現在會了嗎？</b>實際計算方式依學校成績評量辦法辦理，以成績單為準。</p>
+      </div>
+    </div>
+    <footer class="s-foot"><span>永福國小 603</span><span class="pg"></span></footer>
+  </section>
+
+  <!-- 8 ─ 行事曆 -->
+  <section class="slide">
+    <header>
+      <span class="eyebrow">03 本學期行事</span>
+      <h2 class="s-title">這學期，我們會一起經過這些日子</h2>
+    </header>
+    <div class="s-body">
+      <div class="legend">
+        <span><i class="dot d-swim"></i>游泳教學</span>
+        <span><i class="dot d-photo"></i>畢業攝影</span>
+        <span><i class="dot d-health"></i>健康事項</span>
+        <span><i class="dot d-exam"></i>定期評量</span>
+        <span><i class="dot d-event"></i>重要活動</span>
+      </div>
+      <div class="months">
+        <div class="month">
+          <h3>九月<span class="en">SEP</span></h3>
+          <div class="ev"><i class="dot d-event"></i><span class="dt">今天</span><span class="nm"><b>家長日</b></span></div>
+        </div>
+        <div class="month">
+          <h3>十月<span class="en">OCT</span></h3>
+          <div class="ev"><i class="dot d-swim"></i><span class="dt">8 四</span><span class="nm">游泳課</span></div>
+          <div class="ev"><i class="dot d-swim"></i><span class="dt">12 一</span><span class="nm">游泳課</span></div>
+          <div class="ev"><i class="dot d-photo"></i><span class="dt">14 三</span><span class="nm"><b>生活照</b>拍攝</span></div>
+          <div class="ev"><i class="dot d-swim"></i><span class="dt">20 二</span><span class="nm">游泳課</span></div>
+          <div class="ev"><i class="dot d-health"></i><span class="dt">23 五</span><span class="nm"><b>流感疫苗</b>接種</span></div>
+        </div>
+        <div class="month">
+          <h3>十一月<span class="en">NOV</span></h3>
+          <div class="ev"><i class="dot d-exam"></i><span class="dt">5–6</span><span class="nm"><b>期中評量</b><br>四、五</span></div>
+          <div class="ev"><i class="dot d-photo"></i><span class="dt">13 五</span><span class="nm"><b>沙龍照</b>拍攝</span></div>
+        </div>
+        <div class="month">
+          <h3>十二月<span class="en">DEC</span></h3>
+          <div class="ev"><i class="dot d-event"></i><span class="dt">12 六</span><span class="nm"><b>校慶運動會</b></span></div>
+          <div class="ev"><i class="dot d-event"></i><span class="dt">22–24</span><span class="nm"><b>畢業旅行</b><br>二～四，三天兩夜</span></div>
+          <div class="ev"><i class="dot d-photo"></i><span class="dt">31 四</span><span class="nm"><b>證件照</b>拍攝</span></div>
+        </div>
+        <div class="month">
+          <h3>一月<span class="en">JAN</span></h3>
+          <div class="ev"><i class="dot d-exam"></i><span class="dt">12–13</span><span class="nm"><b>期末評量</b><br>二、三</span></div>
+          <div class="ev"><i class="dot d-event"></i><span class="dt">20 三</span><span class="nm"><b>休業式</b><br>發成績單</span></div>
+        </div>
+      </div>
+      <p class="faint">日期如遇天候或學校公告調整，以聯絡簿與班級群組通知為準。</p>
+    </div>
+    <footer class="s-foot"><span>永福國小 603</span><span class="pg"></span></footer>
+  </section>
+
+  <!-- 9 ─ 游泳 -->
+  <section class="slide">
+    <header>
+      <span class="eyebrow">03 本學期行事</span>
+      <h2 class="s-title">游泳教學　<span class="thin">共三次</span></h2>
+    </header>
+    <div class="s-body">
+      <div class="bignum">
+        <div class="date-chip"><span class="d">10/8</span><span class="w">星期四</span></div>
+        <div class="date-chip"><span class="d">10/12</span><span class="w">星期一</span></div>
+        <div class="date-chip"><span class="d">10/20</span><span class="w">星期二</span></div>
+      </div>
+      <div class="cols cols--2">
+        <div class="panel">
+          <h3>當天要帶</h3>
+          <ul>
+            <li>泳衣泳褲、<b>泳帽（必備）</b>、泳鏡</li>
+            <li>大浴巾、換洗衣物、夾鏈袋或防水袋</li>
+            <li>水壺；長髮請先綁好</li>
+            <li>地點與交通方式：<mark class="todo">〔待補〕</mark>　費用：<mark class="todo">〔待補〕</mark></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>見習與身體狀況</h3>
+          <ul>
+            <li>身體不適請在<b>聯絡簿寫明</b>，當天在池畔見習，<b>不算缺課</b>。</li>
+            <li>女生生理期可見習，不需另外請假。</li>
+            <li>有氣喘、皮膚或耳鼻相關狀況，請先讓我知道。</li>
+            <li>怕水的孩子不會被逼下水，會從適應開始。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="s-foot"><span>永福國小 603</span><span class="pg"></span></footer>
+  </section>
+
+  <!-- 10 ─ 拍照 -->
+  <section class="slide">
+    <header>
+      <span class="eyebrow">03 本學期行事</span>
+      <h2 class="s-title">畢業攝影三部曲</h2>
+    </header>
+    <div class="s-body">
+      <ul class="rule-list">
+        <li><span class="k">10/14 三　生活照</span><span class="v">校園自然取景，記錄上課與下課的樣子。服裝規定：<mark class="todo">〔待確認〕</mark></span></li>
+        <li><span class="k">11/13 五　沙龍照</span><span class="v">畢業紀念冊主要照片，可自備服裝。細節：<mark class="todo">〔待確認〕</mark></span></li>
+        <li><span class="k">12/31 四　證件照</span><span class="v">畢業證書與<b>國中入學</b>使用。穿制服、<b>露出眉毛與耳朵</b>、不戴帽子與飾品。</span></li>
+      </ul>
+      <div class="callout">
+        <span class="tag">請特別注意</span>
+        <p>這三次都會用在畢業紀念冊上。<b>當天請假需自行補拍，且補拍不一定來得及編進紀念冊。</b>如果家裡有既定行程，請提早跟我說，我來協調攝影公司。</p>
+      </div>
+    </div>
+    <footer class="s-foot"><span>永福國小 603</span><span class="pg"></span></footer>
+  </section>
+
+  <!-- 11 ─ 疫苗 -->
+  <section class="slide">
+    <header>
+      <span class="eyebrow">03 本學期行事</span>
+      <h2 class="s-title">10/23 (五)　流感疫苗校園接種</h2>
+    </header>
+    <div class="s-body cols cols--2">
+      <div class="panel">
+        <h3>同意書</h3>
+        <ul>
+          <li>接種前約一週發下，<b>同意或不同意都要簽名交回</b>。</li>
+          <li>沒交回同意書的孩子當天不會接種。</li>
+          <li>當天請假者，可自行至合約診所補接種。</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>當天與接種後</h3>
+        <ul>
+          <li>務必吃早餐；身體不適、發燒請先告知，當天不接種。</li>
+          <li>接種後<b>在校觀察 30 分鐘</b>。</li>
+          <li>兩天內避免劇烈運動。</li>
+          <li>若出現發燒或不適，請就醫並告知老師。</li>
+        </ul>
+      </div>
+      <div class="callout" style="grid-column:1/-1">
+        <span class="tag">提醒</span>
+        <p>有慢性病、藥物過敏或曾對疫苗有不良反應的孩子，請在同意書上務必註明，並讓我知道一聲。</p>
+      </div>
+    </div>
+    <footer class="s-foot"><span>永福國小 603</span><span class="pg"></span></footer>
+  </section>
+
+  <!-- 12 ─ 運動會 -->
+  <section class="slide">
+    <header>
+      <span class="eyebrow">03 本學期行事</span>
+      <h2 class="s-title">12/12 (六)　校慶運動會</h2>
+    </header>
+    <div class="s-body cols cols--2">
+      <ul class="rule-list">
+        <li><span class="k">上課日</span><span class="v">當天到校，<b>補假日期依學校公告</b>　<mark class="todo">〔待確認〕</mark></span></li>
+        <li><span class="k">603 參加項目</span><span class="v">大隊接力、班級趣味競賽　<mark class="todo">〔待補〕</mark></span></li>
+        <li><span class="k">服裝</span><span class="v">運動服、運動鞋；請自備水壺與帽子。</span></li>
+        <li><span class="k">家長</span><span class="v">歡迎到校觀賽；是否有親子項目　<mark class="todo">〔待確認〕</mark></span></li>
+      </ul>
+      <div class="callout">
+        <span class="tag">最後一次</span>
+        <p>這是孩子在永福的<b>最後一次校慶</b>。當天會安排班級大合照，如果您有空，非常歡迎來一起拍。</p>
+      </div>
+    </div>
+    <footer class="s-foot"><span>永福國小 603</span><span class="pg"></span></footer>
+  </section>
+
+  <!-- 13 ─ 畢旅 -->
+  <section class="slide">
+    <header>
+      <span class="eyebrow">03 本學期行事</span>
+      <h2 class="s-title">12/22 (二) – 12/24 (四)　畢業旅行</h2>
+    </header>
+    <div class="s-body cols cols--2">
+      <ul class="rule-list">
+        <li><span class="k">天數</span><span class="v">三天兩夜</span></li>
+        <li><span class="k">地點與行程</span><span class="v"><mark class="todo">〔待補〕</mark></span></li>
+        <li><span class="k">費用與繳費</span><span class="v"><mark class="todo">〔待補〕</mark>　有經濟困難請私下告知，學校有補助管道。</span></li>
+        <li><span class="k">行前說明會</span><span class="v"><mark class="todo">〔日期待補〕</mark>　另發行前通知與物品清單。</span></li>
+      </ul>
+      <div>
+        <div class="panel">
+          <h3>安全與健康</h3>
+          <ul>
+            <li>全程投保旅遊平安險，隨隊人員：導師與<mark class="todo">〔待補〕</mark></li>
+            <li>需服藥的孩子請填<b>用藥同意書</b>，藥品交由老師保管、按時提醒。</li>
+            <li>暈車、過敏、飲食禁忌請在調查表上寫清楚。</li>
+            <li>不帶手機；每天會在班級群組報平安與傳照片。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="s-foot"><span>永福國小 603</span><span class="pg"></span></footer>
+  </section>
+
+  <!-- 14 ─ 學期收尾 + 升國中 -->
+  <section class="slide">
+    <header>
+      <span class="eyebrow">04 六年級專屬</span>
+      <h2 class="s-title">從休業式到畢業，剩下的路</h2>
+    </header>
+    <div class="s-body cols cols--2">
+      <ul class="rule-list">
+        <li><span class="k">1/20 三　休業式</span><span class="v">發成績單，當天說明寒假作業。</span></li>
+        <li><span class="k">寒假</span><span class="v"><mark class="todo">〔起訖日期待補〕</mark></span></li>
+        <li><span class="k">下學期</span><span class="v">畢業考、畢業紀念冊完稿、<b>畢業典禮</b>。</span></li>
+        <li><span class="k">升國中</span><span class="v">學區國中報到與入學時程依教育局公告；六下另辦升學說明會。</span></li>
+      </ul>
+      <div class="callout">
+        <span class="tag">這一年可以先做的</span>
+        <p>把<b>讀書習慣</b>穩下來，把<b>作息</b>慢慢調成國中的節奏。國中不會等孩子準備好，但現在還來得及慢慢練。</p>
+      </div>
+    </div>
+    <footer class="s-foot"><span>永福國小 603</span><span class="pg"></span></footer>
+  </section>
+
+  <!-- 15 ─ Q&A -->
+  <section class="slide">
+    <header>
+      <span class="eyebrow">結語</span>
+      <h2 class="s-title">謝謝您今天來</h2>
+    </header>
+    <div class="s-body cols cols--2">
+      <div>
+        <p class="qa">Q &amp; A</p>
+        <p class="lead muted" style="margin-top:18px">今天沒問完的，隨時找我。孩子的六年級只有一次，我們一起把它走好。</p>
+      </div>
+      <div>
+        <ul class="rule-list">
+          <li><span class="k">最快的方式</span><span class="v">寫在<b>聯絡簿</b>上，我當天一定回。</span></li>
+          <li><span class="k">急事</span><span class="v"><mark class="todo">〔電話與方便聯絡時段〕</mark></span></li>
+          <li><span class="k">想單獨談</span><span class="v">請提前一天說，我安排時間，不在走廊上匆匆講完。</span></li>
+        </ul>
+        <p class="faint" style="margin-top:14px">這份簡報可以帶回家慢慢看，日期若有調整我會直接更新這個連結。</p>
+      </div>
+    </div>
+    <footer class="s-foot"><span>永福國小 603</span><span class="pg"></span></footer>
+  </section>
+
+</div>
+</div>
+
+<nav class="nav" id="nav" aria-label="簡報導覽">
+  <span class="count" id="count">01 / 15</span>
+  <button type="button" id="prev" aria-label="上一頁">‹ 上一頁</button>
+  <button type="button" id="next" aria-label="下一頁">下一頁 ›</button>
+</nav>
+
+<script>
+(function(){
+  var deck   = document.getElementById('deck');
+  var stage  = document.getElementById('stage');
+  var rail   = document.getElementById('rail');
+  var count  = document.getElementById('count');
+  var slides = Array.prototype.slice.call(deck.querySelectorAll('.slide'));
+  var deckQ  = window.matchMedia('(min-width:820px) and (min-height:520px)');
+  var i = 0;
+
+  slides.forEach(function(s, n){
+    var pg = s.querySelector('.pg');
+    if (pg) pg.textContent = String(n + 1).padStart(2, '0') + ' / ' + String(slides.length).padStart(2, '0');
+  });
+
+  function pad(n){ return String(n).padStart(2, '0'); }
+
+  function show(n, push){
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function(s, k){ s.classList.toggle('is-active', k === i); });
+    count.textContent = pad(i + 1) + ' / ' + pad(slides.length);
+    rail.style.width = ((i + 1) / slides.length * 100) + '%';
+    if (push && deckQ.matches) {
+      try { history.replaceState(null, '', '#p' + (i + 1)); } catch (e) {}
+    }
+  }
+
+  function fit(){
+    if (deckQ.matches) {
+      var k = Math.min(stage.clientWidth / 1280, stage.clientHeight / 720);
+      deck.style.transform = 'scale(' + k + ')';
+      show(i, false);
+    } else {
+      deck.style.transform = '';
+      slides.forEach(function(s){ s.classList.remove('is-active'); });
+    }
+  }
+
+  document.getElementById('next').addEventListener('click', function(){ show(i + 1, true); });
+  document.getElementById('prev').addEventListener('click', function(){ show(i - 1, true); });
+
+  document.addEventListener('keydown', function(e){
+    if (!deckQ.matches) return;
+    var k = e.key;
+    if (k === 'ArrowRight' || k === 'PageDown' || k === ' ') { e.preventDefault(); show(i + 1, true); }
+    else if (k === 'ArrowLeft' || k === 'PageUp') { e.preventDefault(); show(i - 1, true); }
+    else if (k === 'Home') { e.preventDefault(); show(0, true); }
+    else if (k === 'End') { e.preventDefault(); show(slides.length - 1, true); }
+  });
+
+  window.addEventListener('resize', fit);
+  if (deckQ.addEventListener) deckQ.addEventListener('change', fit);
+
+  var m = /^#p(\d+)$/.exec(location.hash || '');
+  if (m) i = parseInt(m[1], 10) - 1;
+  fit();
+})();
+</script>
+
+</body>
+</html>
